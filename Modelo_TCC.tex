@@ -1,11 +1,10 @@
-% documento de exemplo modificado a partir do modelo original para teses e dissertações do 
-% Programa de Pós-Graduaçãoe em Ciência da Comptuação da UFMG - PPGCC-UFMG, onde as teses 
-% foram substituídas por TCCs
-\documentclass[proposal]{ppgccufmg} % utilizem 'tcc' para a monografia final ou 'proposal' para projeto de TCC
 
-\usepackage[brazil]{babel}      % se o documento for em português, OU
+\documentclass[tcc]{ppgccufmg} % utilizem 'tcc' para a monografia final ou 'proposal' para projeto de TCC
+
+% configurações do documento
+\usepackage[brazil]{babel}      % se o documento for em português
 \usepackage[latin1]{inputenc}
-%\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}	% devo usar esse pacote ?  (!)
 \usepackage[T1]{fontenc} 
 \usepackage{graphicx}
 \usepackage[a4paper,
@@ -33,7 +32,7 @@ filecolor=black,
 		title={Job-Shop Scheduling\\com abordagem Just-in-Time},
 		authorrev={Rodrigues Jardim, Filipi Maciel},
 		cutter={D1234p},   % dados que futuramente serão utilizados pela biblioteca
-		cdu={519.6*82.10}, % dados que futuramente serão utilizados pela biblioteca
+		cdu={519.6*82.10}, % dados que futuramente serão utilizados pela biblioteca (!)
 		university={Instituto Federal do Norte de Minas Gerais},
 		campus={Montes Claros},
 		coursetype = {Bacharelado},
@@ -41,15 +40,23 @@ filecolor=black,
 		address={Montes Claros},
 		date={2024-03},
 		keywords={Job-Shop, Scheduling, Just-in-Time, JSSP},
-		advisor={Tadeu Zubaran},
-		%  approval={img/approvalsheet.eps},
+		advisor={Tadeu Zubaran}, % nome completo de tadeu? (!)
+		%  approval={img/approvalsheet.eps},  (!)
 		abstract={Resumo}{resumo},
 		abstract=[english]{Abstract}{abstract},
-		dedication={dedicatoria},
+		dedication={dedicatoria}, % não consegui encontrar o arquivo/variável para alterar (!)
 		ack={agradecimentos},
-		epigraphtext={A verdade é o contrário da mentira, \\
-			e a mentira é o oposto da verdade.}{Autor desconhecido},
+		epigraphtext={It's not darkness that deceives and hides. It's light.}{Death Note},
 	}
+	
+	% LISTA DE EPIGRAFES 
+	% It's not darkness that deceives and hides. It's light - Death Note
+	% O que é melhor? Nascer bom ou superar sua natureza maligna com muito esforço? - Paarthurnax, The Elder Scrolls 5: Skyrim
+	% The right man in the wrong place can make all the difference in the world. - G-Man, Half-Life 2
+	% Stand in the ashes of a trillion dead souls, and asks the ghosts if honor matters. The silence is your answer. -  Javik, Mass Effect 3
+	% The harder you beat a man, the taller he stands. - The Jackal, Far Cry 2
+	% 
+	
 	
 	% caso tenha a necessidade de incluir algumas configurações adicionais...
 	\input{configuracoes}
